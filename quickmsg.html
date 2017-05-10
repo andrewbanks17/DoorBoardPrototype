@@ -6,6 +6,7 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 <link rel= "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script language="javascript">
+
   function add(elementID){
    quick_msg.message.value = quick_msg.message.value+document.getElementById(elementID).value;
   }
@@ -61,7 +62,12 @@
 
 </script>
 </head>  
+<style>
+ .qButton{
+    height:45px;
 
+ }
+</style>
 <body>
 <form name="quick_msg" action="idverify.html" method = "">
   <section id = "mockTablet">
@@ -76,23 +82,24 @@
     	<section id = "textbox" style = "position: absolute;top: 100px; left: 330px;">
         <textarea id="messageText" name="message" style="font-size:30px; resize: none" rows="8" cols="37" placeholder="Pick phrases to make your message."></textarea>
       </section>
-    	<section id= "presetPhrase" style="position: absolute; top: 400px;">
+    	<section id= "presetPhrase" style="position: absolute; top: 375px;">
         <h4><b>Phrases you can use</b></h4>
         <ul>
-          <li><input id="hello" style="font-size:20px;" type="button" value="Hello! This is a " onclick="add(this.id)">
-          <input id="131" style="font-size:20px;" type="button" value="CMSC131 " onclick="add(this.id)">
-          <input id="216" style="font-size:20px;" type="button" value="CMSC216 " onclick="add(this.id)">
-          <input id="351" style="font-size:20px;" type="button" value="CMSC351 " onclick="add(this.id)">
-          <input id="434" style="font-size:20px;" type="button" value="CMSC434 " onclick="add(this.id)">
-          <input id="student" style="font-size:20px;" type="button" value="Student!" onclick="add(this.id)">
-          <li><input id="meeting" style="font-size:20px;" type="button" value="I scheduled a meeting with you today but you are not here. Please reply me to schedule another meeting." onclick="add(this.id)">
-          <li><input id="absence" style="font-size:20px;" type="button" value="I am sorry that I was absent for today's lecture. Documents of excuse have been droped to your mailbox." onclick="add(this.id)">
-          <li><input id="drop" style="font-size:20px;" type="button" value="Documents you required have been dropped to your mailbox." onclick="add(this.id)">
-          <li><input id="reply" style="font-size:20px;" type="button" value="Please contact me through my email address ASAP for a emergent matter!" onclick="add(this.id)">
+          <li><input  class="qButton"id="hello" style="font-size:20px;" type="button" value="Hello! This is a " onclick="add(this.id)">
+          <input class="qButton" id="131" style="font-size:20px;" type="button" value="CMSC131 " onclick="add(this.id)">
+          <input class="qButton" id="216" style="font-size:20px;" type="button" value="CMSC216 " onclick="add(this.id)">
+          <input class="qButton" id="351" style="font-size:20px;" type="button" value="CMSC351 " onclick="add(this.id)">
+          <input class="qButton" id="434" style="font-size:20px;" type="button" value="CMSC434 " onclick="add(this.id)">
+          <input class="qButton"id="student" style="font-size:20px;" type="button" value="Student!" onclick="add(this.id)">
+          <li><input class="qButton" id="meeting" style="font-size:20px;" type="button" value="I scheduled a meeting with you today but you are not here. Please reply me to schedule another meeting." onclick="add(this.id)">
+          <li><input class="qButton" id="absence" style="font-size:20px;" type="button" value="I am sorry that I was absent for today's lecture. Documents of excuse have been droped to your mailbox." onclick="add(this.id)">
+          <li><input class="qButton" id="drop" style="font-size:20px;" type="button" value="Documents you required have been dropped to your mailbox." onclick="add(this.id)">
+          <li><input  class="qButton"id="reply" style="font-size:20px;" type="button" value="Please contact me through my email address ASAP for a emergent matter!" onclick="add(this.id)">
         </ul>
 
-        <input style="position: absolute;background:#EF0F0B;color:#fff;font-family:Sans-serif;font-size:40px;text-align:center;border:0;transition:all 0.3s ease;border-radius:12px;width:200px; height: 80px;top:250px;left:500px;margin: 25px 25px;" type="reset" value="Reset">
-        <button class="submitButton2" id="qckSubmit" style = "background: #428BCA;color: #fff;font-family: Sans-serif;font-size: 40px;height: 80px;width: 200px;line-height: 60px;margin: 25px 25px;text-align: center;border: 0;transition: all 0.3s ease;position:absolute;top: 250px;left: 750px;border-radius:12px;" type="submit" onclick= "return check()">Send</button>
+        <input style="position: absolute;background:#e90;color:#fff;font-family:Sans-serif;font-size:40px;text-align:center;border:0;transition:all 0.3s ease;border-radius:12px;width:200px; height: 80px;top:290px;left:500px;margin: 25px 25px;" type="reset" value="Reset">
+        <button class="submitButton2" id="qckSubmit" style = "background: #428BCA;color: #fff;font-family: Sans-serif;font-size: 40px;height: 80px;width: 200px;line-height: 60px;margin: 25px 25px;text-align: center;border: 0;transition: all 0.3s ease;position:absolute;top: 290px;left: 750px;border-radius:12px;" type="submit" onclick= "return check()">Send</button>
+        <button class="submitButton2" id="qckSubmit" style = "background: #f33;color: #fff;font-family: Sans-serif;font-size: 40px;height: 80px;width: 200px;line-height: 60px;margin: 25px 25px;text-align: center;border: 0;transition: all 0.3s ease;position:absolute;top: 290px;left: 35px;border-radius:12px;" type="submit" onclick= "return check()">Previous</button>
     	</section>
         
     	</section>
